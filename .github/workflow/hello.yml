@@ -12,14 +12,14 @@
 
 jobs:
   say-hello:
-  runs-on: ubunt-latest
+   runs-on: ubuntu-latest
 
 # Steps
 # Should be inside the job
   
   steps:
     -name: say hello to everyone 
-     run: echo " Hi frnds"
+      run: echo " Hi frnds"
      
 # Actions
 # Should be inside the Steps
