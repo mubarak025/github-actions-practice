@@ -7,11 +7,17 @@ on:
 jobs:
   code:
     runs-on: ubuntu-latest
-    # these steps will be autometically clone the code of the current branch into the runner
+    # these steps will automatically clone the code of the current branch into the runner
     steps:
       - name: checkout/clone the code
         uses: actions/checkout@v7
 
       - name: install linter
         run: pip install ruff
+
+      - name: check the file for linting
+        run: ruff check .
+
+
+        
         
